@@ -1,0 +1,75 @@
+/* Estilos para la sección Nosotros */
+.nosotros {
+  background-color: #F47521; /* Color de fondo de la sección */
+  padding: 30px 0; /* Espaciado interno superior e inferior */
+  text-align: center;
+}
+
+.nosotros h1 {
+  font-size: 2.5rem; /* Tamaño de fuente para el título principal */
+  margin-bottom: 20px; /* Espaciado inferior */
+  color: white; /* Color del texto */
+}
+
+.nosotros h3 {
+  font-size: 1.5rem; /* Tamaño de fuente para el subtítulo */
+  margin-bottom: 40px; /* Espaciado inferior */
+  color: black; /* Color del texto */
+}
+
+/* Estilos para las tarjetas de los miembros del equipo */
+.nosotros-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para que las tarjetas se envuelvan en pantalla pequeña */
+  gap: 20px; /* Espaciado entre tarjetas */
+  max-width: 1200px; /* Ancho máximo para el contenido */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.nosotros-card {
+  background-color: #fff; /* Color de fondo de las tarjetas */
+  border-radius: 40px; /* Borde redondeado de las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de las tarjetas */
+  padding: 20px; /* Espaciado interno de las tarjetas */
+  text-align: center; /* Centrar contenido en las tarjetas */
+  width: calc(33.33% - 20px); /* Ancho de las tarjetas, 3 tarjetas en una fila */
+  transition: transform 0.2s ease-in-out; /* Transición al pasar el mouse */
+  min-width: 260px; /* Ancho mínimo de las tarjetas */
+  max-width: 260px; /* Ancho máximo de las tarjetas */
+  height: auto; /* Altura automática según el contenido */
+}
+
+.nosotros-card img {
+  max-width: 100%; /* Ajustar imagen al ancho de la tarjeta */
+  border-radius: 50%; /* Imagen de perfil redondeada */
+}
+
+.nosotros-card h3 {
+  font-size: 1.5rem; /* Tamaño de fuente para el nombre */
+  margin: 10px 0; /* Espaciado superior e inferior */
+  color: #333; /* Color del texto del nombre */
+}
+
+.nosotros-card p {
+  font-size: 1rem; /* Tamaño de fuente para la descripción */
+  color: #555; /* Color del texto de la descripción */
+}
+
+/* Estilos para los íconos de redes sociales */
+.redes-sociales {
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.redes-sociales a {
+  font-size: 1.5rem; /* Tamaño de fuente de los íconos */
+  color: #007bff; /* Color de los íconos */
+  margin-right: 10px; /* Espaciado derecho entre íconos */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s; /* Transición al pasar el mouse sobre los íconos */
+}
+
+.redes-sociales a:hover {
+  color: #0056b3; /* Cambio de color al pasar el mouse */
+}

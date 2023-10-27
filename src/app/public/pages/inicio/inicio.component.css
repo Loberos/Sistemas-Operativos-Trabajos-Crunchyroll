@@ -1,0 +1,71 @@
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(https://dp6mhagng1yw3.cloudfront.net/entries/11th/ddda32c0-a8fa-4bca-8f4d-678cd2204df7.png);
+  background-size: 70%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.home__container {
+  max-width: 40%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home__data {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.home__data .home__description {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  line-height: 2.7rem;
+}
+
+.home__description span {
+  color: #F47521;
+}
+
+.home__data p {
+  font-size: 2.0rem;
+  line-height: 2rem;
+}
+
+.home__button {
+  margin-top: 2rem;
+  display: inline-block;
+  background-color: #F47521;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  transition: 0.4s;
+}
+
+.home__button:hover {
+  box-shadow: 0 4px 12px hsla(38, 69%, 8%, 0.2);
+}
+
+@media (max-width: 606px) {
+  .home__container {
+    position: static;
+    max-width: 100%;
+  }
+  .home__data .home__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 2.5rem;
+  }
+  .home__data p {
+    font-size: 1rem;
+  }
+  .home {
+    background-size: cover;
+    background-position: center;
+  }
+}

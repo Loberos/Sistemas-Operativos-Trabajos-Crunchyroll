@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+  <div class="anime-details">
+    <h2>{{ animeDetails.titulo }}</h2>
+    <img [src]="animeDetails.url_imagen" alt="{{ animeDetails.titulo }}" />
+
+    <h3><strong>Sinopsis</strong> </h3>
+    <p>{{ animeDetails.sinopsis }}</p>
+
+    <h3><strong>Detalles del Anime</strong> </h3>
+    <ul>
+      <li><strong>Generos:</strong>
+      <li  *ngFor="let categoria of animeDetails.detalle_anime.tipo">
+        {{ categoria.nombre }}
+      </li>
+      <li><strong>Año:</strong> {{ animeDetails.fecha_publicacion }}</li>
+      <li><strong>Estado:</strong> {{ animeDetails.detalle_anime.estado }}</li>
+      <li><strong>Visitas:</strong> {{ animeDetails.detalle_anime.visitas }}</li>
+      <li><strong>Cantidad de Episodios:</strong> {{ animeDetails.detalle_anime.cantidad_episodios }}</li>
+    </ul>
+    <br>
+    <br>
+    <ul class="episodes-list">
+      <li *ngFor="let episodio of animeDetails.lista_episodidos">
+        <a [href]="episodio.url_video" target="_blank">
+          {{ animeDetails.titulo }} Episodio {{ episodio.num_episodio }}
+        </a>
+      </li>
+    </ul>
+</div>
+</div>
+<app-footer></app-footer>

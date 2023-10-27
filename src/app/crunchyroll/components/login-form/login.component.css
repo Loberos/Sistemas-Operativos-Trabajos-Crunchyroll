@@ -1,0 +1,74 @@
+.fondo {
+  background-image: url(https://img1.ak.crunchyroll.com/i/spire1/62489c04637d46fa3070679d065bb69f1588714415_main.png); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 40%;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 300px;
+    padding: 10px;
+  }
+}
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  font-size: 35px;
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+}
+

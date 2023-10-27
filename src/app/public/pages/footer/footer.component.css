@@ -1,0 +1,34 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.copyright {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.updated {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+}

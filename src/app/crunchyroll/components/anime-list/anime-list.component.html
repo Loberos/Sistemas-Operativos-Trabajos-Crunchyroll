@@ -1,0 +1,7 @@
+<section class="anime-list">
+  <div class="anime-card" *ngFor="let anime of animes">
+    <img [src]="anime.url_imagen" alt="{{ anime.titulo }}" />
+    <h3>{{ anime.titulo }}</h3>
+    <a [routerLink]="['/details', anime.titulo]">Ver Detalles</a>
+  </div>
+</section>
